@@ -21,7 +21,17 @@
         "command": "nextjs-uri-generator.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "nextjs-uri-generator",
+      "properties": {
+        "yourExtensionName.hostUrl": {
+          "type": "string",
+          "default": "http://localhost:3000",
+          "description": "서버의 호스트 URL을 설정합니다."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
