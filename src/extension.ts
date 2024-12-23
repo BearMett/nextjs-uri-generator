@@ -35,7 +35,7 @@ export function activate(context: vscode.ExtensionContext) {
                 range: new vscode.Range(line, 0, line, 0),
                 renderOptions: {
                     before: {
-                        contentText: `// @endpoint: ${apiPath}`,
+                        contentText: `// @endpoint: ${apiPath}\n`,
                     }
                 }
             });
