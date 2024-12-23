@@ -37,6 +37,10 @@
     "lint": "eslint src",
     "test": "vscode-test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BearMett/nextjs-uri-generator.git"
+  },
   "devDependencies": {
     "@types/vscode": "^1.96.0",
     "@types/mocha": "^10.0.10",
