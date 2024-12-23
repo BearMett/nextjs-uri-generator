@@ -5,7 +5,7 @@
   "description": "Showing actual endpoint paths above HTTP method functions in Next.js API routes",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.96.0"
+    "vscode": "^1.93.0"
   },
   "categories": [
     "Other"
@@ -42,7 +42,7 @@
     "url": "https://github.com/BearMett/nextjs-uri-generator.git"
   },
   "devDependencies": {
-    "@types/vscode": "^1.96.0",
+    "@types/vscode": "^1.93.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
