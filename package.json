@@ -16,12 +16,6 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "nextjs-uri-generator.helloWorld",
-        "title": "Hello World"
-      }
-    ],
     "configuration": {
       "title": "nextjs-uri-generator",
       "properties": {
