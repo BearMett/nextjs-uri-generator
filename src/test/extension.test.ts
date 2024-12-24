@@ -1,6 +1,6 @@
 import * as assert from 'assert';
 import * as vscode from 'vscode';
-import { ApiEndpointCodeLensProvider } from '../extension';
+import { ApiEndpointCodeLensProvider } from '../api-endpoint-provider';
 
 suite('ApiEndpointCodeLensProvider Test Suite', () => {
 	const provider = new ApiEndpointCodeLensProvider();
