@@ -7,11 +7,11 @@ suite('ApiEndpointCodeLensProvider Test Suite', () => {
 
 	test('정규식이 HTTP 메소드를 올바르게 감지하는지 테스트', async () => {
 		const testContent = `
-			export function GET() {}
-			export async function POST() {}
-			export function PUT() {}
-			export function DELETE() {}
-			export function PATCH() {}
+			export function GET()
+			export async function POST()
+			export function PUT()
+			export function DELETE()
+			export function PATCH()
 		`;
 
 		const document = await vscode.workspace.openTextDocument({
