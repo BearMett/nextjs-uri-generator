@@ -1,9 +1,12 @@
+import path from 'path';
+import { generateDefineHttpMethodTestFile } from '../resources/test-resources/export-parser/generateDefineHttpMethodTestFile';
 import { parseExportedFunctions } from './export-parser';
 import { describe, it, expect } from 'vitest';
 
 describe('parseExportedFunctions', () => {
   it('should parse exported functions correctly', () => {
-    const result = parseExportedFunctions('resources/test-resources/export-parser/exporting.ts');
+    const filePath = generateDefineHttpMethodTestFile(path.join(__dirname, '..', 'resources', 'test-resources', 'export-parser'));
+    const result = parseExportedFunctions(filePath);
     expect(result).toEqual([
         { name: 'GET', line: 1 },
         { name: 'POST', line: 9 },

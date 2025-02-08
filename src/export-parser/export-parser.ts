@@ -1,5 +1,5 @@
 import fs from "fs";
-import parser from "@babel/parser";
+import * as parser from '@babel/parser';
 import traverse from "@babel/traverse";
 
 const httpMethods = ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'];
