@@ -3,6 +3,7 @@
   "displayName": "Next.js URL Generator",
   "publisher": "bearmett",
   "license": "MIT",
+  "icon": "icon.png",
   "description": "Showing actual endpoint paths above HTTP method functions in Next.js API routes",
   "version": "0.0.1",
   "engines": {
