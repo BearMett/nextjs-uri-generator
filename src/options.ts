@@ -9,7 +9,7 @@ const defaultOptions: ExtensionOptions = {
 };
 
 export function getExtensionOptions(): ExtensionOptions {
-  const config = vscode.workspace.getConfiguration("nextjs-uri-generator");
+  const config = vscode.workspace.getConfiguration("nextjs-url-generator");
   return {
     hostUrl: config.get<string>("hostUrl") ?? defaultOptions.hostUrl,
   };

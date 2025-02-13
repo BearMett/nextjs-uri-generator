@@ -38,8 +38,8 @@ export async function GET
 
 ## 개발자 정보
 
-- GitHub: <https://github.com/BearMett/nextjs-uri-generator>  
-- 이슈 리포트: <https://github.com/BearMett/nextjs-uri-generator/issues>
+- GitHub: <https://github.com/BearMett/nextjs-url-generator>  
+- 이슈 리포트: <https://github.com/BearMett/nextjs-url-generator/issues>
 
 ---
 

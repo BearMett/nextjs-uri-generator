@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-uri-generator",
-  "displayName": "nextjs-uri-generator",
+  "name": "nextjs-url-generator",
+  "displayName": "nextjs-url-generator",
   "license": "MIT",
   "description": "Showing actual endpoint paths above HTTP method functions in Next.js API routes",
   "version": "0.0.1",
@@ -17,9 +17,9 @@
   "main": "./dist/extension.js",
   "contributes": {
     "configuration": {
-      "title": "nextjs-uri-generator",
+      "title": "nextjs-url-generator",
       "properties": {
-        "yourExtensionName.hostUrl": {
+        "nextUrlGen.hostUrl": {
           "type": "string",
           "default": "http://localhost:3000",
           "description": "서버의 호스트 URL을 설정합니다."
@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BearMett/nextjs-uri-generator.git"
+    "url": "https://github.com/BearMett/nextjs-url-generator.git"
   },
   "devDependencies": {
     "@types/babel__traverse": "^7.20.6",

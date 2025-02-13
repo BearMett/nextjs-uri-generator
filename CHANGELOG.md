@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "nextjs-uri-generator" extension will be documented in this file.
+All notable changes to the "nextjs-url-generator" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
