@@ -1,6 +1,7 @@
 {
   "name": "nextjs-url-generator",
-  "displayName": "nextjs-url-generator",
+  "displayName": "Next.js URL Generator",
+  "publisher": "bearmett",
   "license": "MIT",
   "description": "Showing actual endpoint paths above HTTP method functions in Next.js API routes",
   "version": "0.0.1",
@@ -8,6 +9,7 @@
     "vscode": "^1.93.0"
   },
   "categories": [
+    "Programming Languages",
     "Other"
   ],
   "activationEvents": [
@@ -17,12 +19,12 @@
   "main": "./dist/extension.js",
   "contributes": {
     "configuration": {
-      "title": "nextjs-url-generator",
+      "title": "Next.js URL Generator",
       "properties": {
         "nextUrlGen.hostUrl": {
           "type": "string",
           "default": "http://localhost:3000",
-          "description": "서버의 호스트 URL을 설정합니다."
+          "description": "Set the host URL of the server"
         }
       }
     }
@@ -39,7 +41,8 @@
     "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
     "check-types": "tsc --noEmit",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "test:unit": "vitest run"
   },
   "repository": {
     "type": "git",
