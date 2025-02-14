@@ -1,5 +1,6 @@
 import * as vscode from "vscode";
 import { ApiEndpointCodeLensProvider } from "./api-endpoint-provider";
+import { getMessage } from "./i18n/i18n";
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
@@ -14,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
       "extension.showEndpoint",
       async (method: string, path: string) => {
         await vscode.env.clipboard.writeText(`${method.toUpperCase()} ${path}`);
-        vscode.window.showInformationMessage(`클립보드에 복사되었습니다.`);
+        vscode.window.showInformationMessage(getMessage("extension.showEndpoint"));
       }
     )
   );
@@ -24,9 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
       "extension.copyEndpoint",
       async (endpoint: string) => {
         await vscode.env.clipboard.writeText(endpoint);
-        vscode.window.showInformationMessage(
-          "엔드포인트가 클립보드에 복사되었습니다."
-        );
+        vscode.window.showInformationMessage(getMessage("extension.copyEndpoint"));
       }
     )
   );

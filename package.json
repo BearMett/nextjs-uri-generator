@@ -26,6 +26,12 @@
           "type": "string",
           "default": "http://localhost:3000",
           "description": "Set the host URL of the server"
+        },
+        "nextUrlGen.language": {
+          "type": "string",
+          "default": "en",
+          "description": "Set the language for the extension",
+          "enum": ["en", "ko"]
         }
       }
     }
