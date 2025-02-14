@@ -47,7 +47,7 @@ export class ApiEndpointCodeLensProvider implements vscode.CodeLensProvider {
   
         codeLenses.push(
           new vscode.CodeLens(range, {
-            title: "복사",
+            title: "URL 복사",
             command: "extension.copyEndpoint",
             arguments: [apiEndpoint],
           })
