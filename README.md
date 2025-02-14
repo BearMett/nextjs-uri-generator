@@ -36,6 +36,15 @@ export async function GET
 - 개발 진행중
 - 기본적인 URI 생성 기능 구현
 
+### 0.0.2
+
+- 아이콘 추가
+- 마켓 배포
+
+### 0.0.4
+
+- 두 코드렌즈 버튼이 모두 문자열을 복사하도록 변경 후 기존 복사 단추를 URL 복사 단추로 변경
+
 ## 개발자 정보
 
 - GitHub: <https://github.com/BearMett/nextjs-url-generator>  
