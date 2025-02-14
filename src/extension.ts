@@ -12,8 +12,9 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand(
       "extension.showEndpoint",
-      (method: string, path: string) => {
-        vscode.window.showInformationMessage(`${method.toUpperCase()} ${path}`);
+      async (method: string, path: string) => {
+        await vscode.env.clipboard.writeText(`${method.toUpperCase()} ${path}`);
+        vscode.window.showInformationMessage(`클립보드에 복사되었습니다.`);
       }
     )
   );
